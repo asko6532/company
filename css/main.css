@@ -877,10 +877,13 @@ header.one {
   justify-content: space-around; }
 
 #halfnhalf {
-  width: 30%; }
+  margin: 0 auto;
+  width: 30%;
+  padding-left: 10%;
+  padding-top: 5%; }
 
 #cam {
-  padding-right: 20%; }
+  padding-right: 15%; }
 
 ul {
   display: flex;
