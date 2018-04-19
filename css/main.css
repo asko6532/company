@@ -774,9 +774,19 @@ textarea {
   background-position: -68300px 0; }
 
 html {
-  background-color: #F4D864; }
+  background-color: #F4D864;
+  margin-top: 0; }
 
-body {
+body.main-page {
+  font-family: 'Nunito';
+  color: white; }
+
+.site {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.landing {
   margin-top: -2%;
   width: 100%;
   height: 100%;
@@ -785,15 +795,29 @@ body {
   align-items: center;
   font-family: 'Gugi'; }
 
+nav {
+  padding-top: 0;
+  list-style-type: none;
+  color: #FF9966;
+  background-color: white;
+  width: 100%;
+  font-size: 120%; }
+
 #real-big {
   font-size: 500%;
   color: white; }
 
-header {
+#medium {
+  font-size: 400%;
+  color: white; }
+
+header.landing {
+  font-family: 'Gugi';
   display: flex;
   padding-right: 10%;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: flex-end;
+  margin: 0; }
 
 .bg-animation {
   align-self: center;
@@ -830,6 +854,55 @@ header {
 .arrow:hover {
   background-image: url("../img/arrow02.png"); }
 
+header.one {
+  margin-top: 50px;
+  font-family: 'Gugi';
+  display: flex;
+  padding-left: 10%;
+  justify-content: flex-end;
+  grid-area: header; }
+
+#s-01 {
+  margin-top: 50px;
+  padding: 4%; }
+
+.top {
+  display: flex;
+  justify-content: space-between; }
+
+#about {
+  background-color: #FF9966;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+
+#halfnhalf {
+  width: 30%; }
+
+#cam {
+  padding-right: 20%; }
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+
+li {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+a:link {
+  color: #FF9966;
+  text-decoration: none; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+a:visited {
+  color: #FF9966;
+  text-decoration: none; }
+
 @media screen and (max-width: 375px) {
   .bg-animation {
     min-width: 375px;
@@ -838,3 +911,15 @@ header {
   body {
     margin-top: 0%;
     margin-bottom: 0%; } }
+/*.site {
+	display: grid;
+	
+	grid-template-rows:1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+
+	grid-template-areas:
+	"nav nav"
+	"something header"
+	"something other"
+}
+*/
