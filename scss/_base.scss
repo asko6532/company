@@ -139,6 +139,7 @@ header.one {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
+	padding-bottom: 5%;
 }
 
 #halfnhalf {
@@ -149,6 +150,7 @@ header.one {
 }
 
 #cam {
+	padding-top: 5%;
 	padding-right: 15%;
 }
 
@@ -189,7 +191,21 @@ a:visited {
 	}
 
 	body {
+		width: 375px;
+		height: 667px;
 		margin-top: 0%;
 		margin-bottom: 0%;
 	}
+	.mtn {
+		display: none;
+	}
+
+	.camimg {
+		width: 100%;
+		height: auto;
+	}
+
+
+
+
 }
